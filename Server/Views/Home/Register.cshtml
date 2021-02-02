@@ -1,0 +1,35 @@
+﻿@model RegisterViewModel
+
+@{
+    ViewBag.Title = "Регистрация";
+}
+
+<div class="row text-center d-print-flex justify-content-center align-items-center">
+    <div class="col-md-12">
+        <form class="form-signin" method="post">
+            <h1>Регистрация:</h1>
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+
+                    <div class="form-group">
+                        <input type="text" asp-for="firstName" class="form-control" placeholder="Имя" required>
+                        <span asp-validation-for="firstName" class="text-danger"></span>
+                    </div>
+                <div class="form-group">
+                    <input type="email" asp-for="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+                    <span asp-validation-for="email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="inputPassword" asp-for="password" name="password"class="form-control" placeholder="Пароль" required>
+                    <span asp-validation-for="password" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="inputPassword" asp-for="confirmPassword" name="password" class="form-control" placeholder="Пароль" required>
+                    <span asp-validation-for="confirmPassword" class="text-danger"></span>
+                </div>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Зарегестрироваться</button>
+            <small>Уже зарегестрированы? <a asp-controller="Home" asp-action="Login" class="button">Войти</a></small>
+        </form>
+    </div>
+</div>

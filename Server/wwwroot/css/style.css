@@ -1,0 +1,83 @@
+﻿.img{
+
+}
+.junior {
+    font-weight: bold;
+    text-align: justify;
+    color: lawngreen;
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: lawngreen;
+    text-shadow: grey 1px 1px 1px;
+}
+
+.middle {
+    font-weight: bold;
+    text-align: justify;
+    color: yellow;
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: yellow;
+    text-shadow: grey 1px 1px 1px;
+}
+
+.senior {
+    font-weight: bold;
+    text-align: justify;
+    color: red;
+    -webkit-text-stroke-width: 0;
+    -webkit-text-stroke-color: red;
+    text-shadow: grey 1px 1px 1px;
+}
+
+.nav-link{
+    color: darkgrey;
+}
+
+.toppanel {
+    position: sticky;
+    top: 0;
+    min-height: 2em;
+    z-index: 99;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    /* Ссылки внутри выпадающего списка */
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        /* Изменение цвета выпадающих ссылок при наведении курсора */
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+/* Показать выпадающее меню при наведении курсора */
+.dropdown:hover .dropdown-content {
+    display: block;
+    border-radius: 5px;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    align-items: center;
+    margin-top: 5%;
+}
+

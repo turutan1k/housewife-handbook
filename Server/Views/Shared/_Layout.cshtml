@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="~/css/style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body text-center>
+        <nav class="toppanel">
+            <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm position-sticky">
+                <h5 class="my-0 mr-md-auto font-itim">housewife-handbook</h5>
+                <nav class="my-1 my-md-auto mr-md-3">
+                    <a type="button" class="btn btn-light" asp-controller="Home" asp-action="Index">Главная</a>
+                    <div class="dropdown">
+                        <a class="btn btn-light" asp-controller="Courses" asp-action="List">Все блюда</a>
+                        <div class="dropdown-content">
+                            <a class="btn btn-light" asp-controller="Breakfast" asp-action="Breakfast">Завтраки</a>
+                            <a class="btn btn-light" asp-controller="Lunch" asp-action="Lunch">Обеды</a>
+                            <a class="btn btn-light" asp-controller="Dinner" asp-action="Dinner">Ужины</a>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-light">Связаться с нами</button>
+                    <small><a class="btn btn-primary align-self-center flex-shrink-0" asp-controller="Home" asp-action="Login">Войти</a></small>
+                    <small><a class="btn btn-primary align-self-center flex-shrink-0" asp-controller="Home" asp-action="Register">Регистрация</a></small>
+                </nav>
+            </div>
+        </nav>
+    <div class="container">
+        <div>
+            @RenderBody()
+        </div>
+    </div>
+    <footer class="container">
+            <p class="mt-5 position-relative">© 2020 Все права защищены
+    </footer>
+    <script src="~/javascript/bootstrap.min.js"></script>
+</body>
+</html>
